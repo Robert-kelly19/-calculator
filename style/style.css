@@ -47,6 +47,7 @@ input {
 .ope1 {
   background-color: cornflowerblue;
 }
+
 @media (min-width: 768px) {
   .calculator {
     width: 42%;
