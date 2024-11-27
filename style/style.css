@@ -1,10 +1,13 @@
+body {
+  background-color: cornsilk;
+}
+
 .calculator {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
   margin: 5px;
   gap: 5px;
-  margin-left: 7%;
-  background-color: darkslategrey;
+  border-radius: 25px;
+  margin: 25% 0;
+  background-color: #2f4f4f;
 }
 
 button {
@@ -21,17 +24,16 @@ button {
 }
 
 div {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
-  margin: 5px;
-  gap: 5px;
+  display: flex;
+  margin: 15px;
+  gap: 15px;
 }
 
 input {
   width: 410%;
   background-color: cadetblue;
   color: white;
-  height: 37px;
+  height: 100px;
   margin: 2px;
   border: solid cadetblue 1px;
   text-align: right;
@@ -50,7 +52,18 @@ input {
 
 @media (min-width: 768px) {
   .calculator {
-    width: 42%;
-    margin: 33% 0 0 300px;
+    width: 30%;
+    border-radius: 20px;
+    height: 565px;
+    margin: 6% 0 0 35%;
+  }
+
+  button {
+    height: 70px;
+    width: 70%;
+  }
+
+  div {
+    margin: 10px;
   }
 }
