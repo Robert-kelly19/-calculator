@@ -13,33 +13,25 @@
     <div class="calculator">
       <form>
         <div class="cal1">
-          <input type="text" id="put" readonly>
+          <input type="text" id="put" readonly onfocus="this.blur">
         </div>
-        <div>
+        <div class="buttons">
           <button  onclick="clearDisplay()" class="ope">AC</button>
           <button type="button" onclick="display.value = display.value.toString().slice(0, -1)" class="ope" >DE</button>
           <button type="button" onclick="appendToDisplay('.')" class="ope">.</button>
-          <button type="button" onclick="appendToDisplay('/')" class="ope">/</button>
-        </div>
-        <div>
+          <button type="button" onclick="appendToDisplay('/')" class="ope1">/</button>
           <button type="button" onclick="appendToDisplay('7')">7</button>
           <button type="button" onclick="appendToDisplay('8')">8</button>
-          <button type="button" onclick="appendToDisplay('8')">9</button>
+          <button type="button" onclick="appendToDisplay('9')">9</button>
           <button type="button" onclick="appendToDisplay('*')" class="ope1">*</button>
-        </div>
-        <div>
           <button type="button" onclick="appendToDisplay('4')">4</button>
           <button type="button" onclick="appendToDisplay('5')">5</button>
           <button type="button" onclick="appendToDisplay('6')">6</button>
           <button type="button" onclick="appendToDisplay('-')" class="ope1">-</button>
-        </div>
-        <div>
           <button type="button" onclick="appendToDisplay('1')">1</button>
           <button type="button" onclick="appendToDisplay('2')">2</button>
           <button type="button" onclick="appendToDisplay('3')">3</button>
           <button type="button" onclick="appendToDisplay('+')" class="ope1">+</button>
-        </div>
-        <div>
           <button type="button" onclick="appendToDisplay('(')">(</button>
           <button type="button" onclick="appendToDisplay(')')">)</button>
           <button type="button" onclick="appendToDisplay('0')">0</button>

@@ -1,68 +1,76 @@
 body {
-  background-color: cornsilk;
+  background-color: #1c1c1c;
 }
 
-.calculator {
-  gap: 5px;
-  border-radius: 25px;
-  margin: 25% 0;
-  background-color: #2f4f4f;
-}
-
-button {
-  width: 42px;
-  padding: 5px;
-  margin: 4px;
-  font-size: x-large;
-  height: 41px;
-  color: white;
-  border: cadetblue;
-  background-color: cadetblue;
-  border-radius: 50%;
-  box-shadow: #4c9da05e 1px 3px;
-}
-
-div {
+.cal {
+  background-color: #1c1c1c;
   display: flex;
-  margin: 15px;
-  gap: 15px;
-}
+  height: 100vh;
+  align-items: center;
+} 
 
-input {
-  width: 410%;
-  background-color: cadetblue;
-  color: white;
-  height: 100px;
-  margin: 2px;
-  border: solid cadetblue 1px;
+.cal1 input {
+  height: auto;
+  width: 100%;
   text-align: right;
-  font-size: xx-large;
-  border-radius: 5%;
-  box-shadow: #4c9da05e 1px 3px;
+  padding-bottom: 1px;
+  padding-top: 80px;
+  font-size: 50px;
+  color: white;
+  background-color: transparent;
+  border: transparent;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  border-radius: 5px;
 }
 
 .ope {
-  background-color: darkgray;
+  background-color: #d4d4d2;
+  color: black;
 }
 
 .ope1 {
-  background-color: cornflowerblue;
+  background-color: #ff9500;
+}
+
+button {
+  background-color: #505050;
+  color: white;
+  width: 85px;
+  border-radius: 50%;
+  height: 85px;
+  border: transparent;
+  font-size: xx-large;
+  font-family: fantasy;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr 4fr;
+  gap: 15px;
 }
 
 @media (min-width: 768px) {
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+  }
+
+  .cal {
+    margin-top: 34px;
+    justify-content: center;
+    height: 100vh;
+    border-radius: 25px;
+    width: 500px;
+  }
+
+  .cal1 input {
+    width: 90%;
+    padding-top: 1px;
+  }
   .calculator {
-    width: 30%;
-    border-radius: 20px;
-    height: 565px;
-    margin: 6% 0 0 35%;
-  }
-
-  button {
-    height: 70px;
-    width: 70%;
-  }
-
-  div {
-    margin: 10px;
+    margin-left: 30px;
   }
 }
