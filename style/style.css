@@ -7,7 +7,7 @@ body {
   display: flex;
   height: 100vh;
   align-items: center;
-} 
+}
 
 .cal1 input {
   height: auto;
@@ -70,7 +70,9 @@ button {
     width: 90%;
     padding-top: 1px;
   }
+
   .calculator {
     margin-left: 30px;
   }
+  
 }
