@@ -1,51 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
   <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
   <div class="cal">
     <div class="calculator">
-        <form>
-            <div class="cal1">
-                <input type="text" name="show">
-            </div>
-            <div>
-                <button onclick="" class="ope">AC</button>
-                <button onclick="" class="ope">DE</button>
-                <button onclick="" class="ope">.</button>
-                <button onclick="" class="ope">/</button>
-            </div>
-            <div>
-                <button onclick="">7</button>
-                <button onclick="">8</button>
-                <button onclick="">9</button>
-                <button onclick="" class="ope1">*</button>
-            </div>
-            <div>
-                <button onclick="">4</button>
-                <button onclick="">5</button>
-                <button onclick="">6</button>
-                <button onclick="" class="ope1">-</button>
-            </div>
-            <div>
-                <button onclick="1">1</button>
-                <button onclick="">2</button>
-                <button onclick="">3</button>
-                <button onclick="" class="ope1">+</button>
-            </div>
-            <div>
-                <button onclick="">()</button>
-                <button onclick="">00</button>
-                <button onclick="">0</button>
-                <button onclick="" class="ope1">=</button>
-            </div>
-        </form>
+      <form>
+        <div class="cal1">
+          <input type="text" id="put" readonly onfocus="this.blur">
+        </div>
+        <div class="buttons">
+          <button  onclick="clearDisplay()" class="ope">AC</button>
+          <button type="button" onclick="display.value = display.value.toString().slice(0, -1)" class="ope" >DE</button>
+          <button type="button" onclick="appendToDisplay('.')" class="ope">.</button>
+          <button type="button" onclick="appendToDisplay('/')" class="ope1">/</button>
+          <button type="button" onclick="appendToDisplay('7')">7</button>
+          <button type="button" onclick="appendToDisplay('8')">8</button>
+          <button type="button" onclick="appendToDisplay('9')">9</button>
+          <button type="button" onclick="appendToDisplay('*')" class="ope1">*</button>
+          <button type="button" onclick="appendToDisplay('4')">4</button>
+          <button type="button" onclick="appendToDisplay('5')">5</button>
+          <button type="button" onclick="appendToDisplay('6')">6</button>
+          <button type="button" onclick="appendToDisplay('-')" class="ope1">-</button>
+          <button type="button" onclick="appendToDisplay('1')">1</button>
+          <button type="button" onclick="appendToDisplay('2')">2</button>
+          <button type="button" onclick="appendToDisplay('3')">3</button>
+          <button type="button" onclick="appendToDisplay('+')" class="ope1">+</button>
+          <button type="button" onclick="appendToDisplay('(')">(</button>
+          <button type="button" onclick="appendToDisplay(')')">)</button>
+          <button type="button" onclick="appendToDisplay('0')">0</button>
+          <button type="button" onclick="calculate('')" class="ope1">=</button>
+        </div>
+      </form>
     </div>
-</div>
-<script src="./script/script.js"></script>
+  </div>
+  <script src="./script/script.js"></script>
 </body>
+
 </html>

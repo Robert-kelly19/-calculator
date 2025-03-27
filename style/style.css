@@ -1,56 +1,76 @@
-.calculator {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
-  margin: 5px;
-  gap: 5px;
-  margin-left: 7%;
-  background-color: darkslategrey;
+body {
+  background-color: #1c1c1c;
 }
 
-button {
-  width: 42px;
-  padding: 5px;
-  margin: 4px;
-  font-size: x-large;
-  height: 41px;
-  color: white;
-  border: cadetblue;
-  background-color: cadetblue;
-  border-radius: 50%;
-  box-shadow: #4c9da05e 1px 3px;
+.cal {
+  background-color: #1c1c1c;
+  display: flex;
+  height: 100vh;
+  align-items: center;
 }
 
-div {
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr 2fr;
-  margin: 5px;
-  gap: 5px;
-}
-
-input {
-  width: 410%;
-  background-color: cadetblue;
-  color: white;
-  height: 37px;
-  margin: 2px;
-  border: solid cadetblue 1px;
+.cal1 input {
+  height: auto;
+  width: 100%;
   text-align: right;
-  font-size: xx-large;
-  border-radius: 5%;
-  box-shadow: #4c9da05e 1px 3px;
+  padding-bottom: 1px;
+  padding-top: 80px;
+  font-size: 50px;
+  color: white;
+  background-color: transparent;
+  border: transparent;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  border-radius: 5px;
 }
 
 .ope {
-  background-color: darkgray;
+  background-color: #d4d4d2;
+  color: black;
 }
 
 .ope1 {
-  background-color: cornflowerblue;
+  background-color: #ff9500;
+}
+
+button {
+  background-color: #505050;
+  color: white;
+  width: 85px;
+  border-radius: 50%;
+  height: 85px;
+  border: transparent;
+  font-size: x-large;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr 4fr;
+  gap: 15px;
 }
 
 @media (min-width: 768px) {
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+  }
+
+  .cal {
+    margin-top: 34px;
+    justify-content: center;
+    height: 100vh;
+    border-radius: 25px;
+    width: 500px;
+  }
+
+  .cal1 input {
+    width: 90%;
+    padding-top: 1px;
+  }
+
   .calculator {
-    width: 42%;
-    margin: 33% 0 0 300px;
+    margin-left: 30px;
   }
 }
